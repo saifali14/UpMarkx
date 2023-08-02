@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:orientation="horizontal"
+    android:background="@drawable/latestmessge_ripple">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/searchview_userimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/default_usericon" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+
+        android:layout_toEndOf="@id/searchview_userimage"
+        android:layout_centerVertical="true">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/searchview_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="220dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_bold"/>
+
+            <ImageView
+                android:id="@+id/searchview_verified"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/verified2"
+                android:visibility="gone"
+                android:layout_marginStart="3dp"/>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/searchview_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textStyle="bold"
+            android:textColor="@color/light_gray"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <ImageView
+        android:id="@+id/searchrecent_removebttn"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/cancel"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:layout_marginEnd="20dp"/>
+
+
+
+
+
+
+
+</RelativeLayout>

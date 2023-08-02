@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+
+
+    <ImageView
+        android:id="@+id/info_illustration"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/info_illust" />
+
+
+
+
+    <ImageView
+        android:id="@+id/info_backbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/backbtn" />
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_illustration"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/info_firstnam_inputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:hint="First Name"
+            app:boxStrokeColor="@color/blue2"
+            app:hintTextColor="@color/blue2"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_alignParentTop="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/info_firstname_edxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/info_secondname_inputlayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:hint="Last Name"
+            android:layout_centerHorizontal="true"
+            app:endIconMode="clear_text"
+            app:boxStrokeColor="@color/blue2"
+            app:hintTextColor="@color/blue2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_below="@id/info_firstnam_inputlayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/info_secondname_edtxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Spinner
+            android:id="@+id/class_selector"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/info_secondname_inputlayout"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:entries="@array/Classes"
+            android:popupBackground="@color/pop"
+            android:background="@color/pop"
+            android:soundEffectsEnabled="true" />
+
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/class_selector"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/blue2"
+            android:text="Next"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

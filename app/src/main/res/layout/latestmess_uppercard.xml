@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/latestmessupper_imageviewlayout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/latestmessupper_imageview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_usericon"
+          />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/latestmessupper_greendot"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignEnd="@id/latestmessupper_imageview"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/greendot_icon"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1.5dp"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/latestmessupper_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latestmessupper_imageviewlayout"
+        android:layout_centerHorizontal="true"
+        android:text="saif ali shaikh"
+        android:textColor="@color/black"
+        android:maxWidth="80dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textSize="15dp" />
+
+</RelativeLayout>

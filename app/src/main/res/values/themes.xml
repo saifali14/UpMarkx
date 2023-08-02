@@ -1,0 +1,342 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.UpMarkx" parent="Theme.MaterialComponents.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#EFF3F6</item>
+        <item name="colorPrimaryVariant">#EFF3F6</item>
+        <item name="colorOnPrimary">@color/gray</item>
+
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+
+
+
+    <style name="Theme.UpMarkx.mainactivity" parent="Theme.MaterialComponents">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">#e5e5e5</item>
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Theme.UpMarkx.mainactivity.profile" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">#e5e5e5</item>
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+
+
+    <style name="Theme.UpMarkx.noactionbar.chapters" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue1</item>
+        <item name="colorPrimaryVariant">#E5EEF4</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Theme.UpMarkx.noactionbar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue1</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Theme.UpMarkx.noactionbar.leaderboardabout" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue1</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+
+    <style name="Theme.UpMarkx.noactionbar.splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue1</item>
+        <item name="colorPrimaryVariant">#2296F3</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Theme.UpMarkx.chatlog" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+
+    <style name="Theme.UpMarkx.lectures" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">#EFF3F6</item>
+        <item name="colorOnPrimary">#EFF3F6</item>
+
+
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.UpMarkx.community" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">#EFF3F6</item>
+        <item name="colorOnPrimary">#e5e5e5</item>
+
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+
+    <style name="AppTheme.ActionBar.Transparent" parent="Theme.UpMarkx">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBarOverlay">true</item>
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+    
+    
+    
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Filter">
+
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="checkedIconTint">@color/white</item>
+        <item name="rippleColor">@color/whiteAlpha</item>
+
+
+
+        <item name="strokeColor">@color/chip_stroke_color</item>
+        <item name="strokeWidth">0.5dp</item>
+    </style>
+
+    <style name="SearchChipStyle" parent="Widget.MaterialComponents.Chip.Filter">
+
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="checkedIconTint">@color/white</item>
+        <item name="rippleColor">@color/whiteAlpha</item>
+        <item name="strokeColor">@color/chip_stroke_color</item>
+        <item name="strokeWidth">0.5dp</item>
+    </style>
+
+
+    <style name="Theme.UpMarkx.leaderboard" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#3EACF3</item>
+        <item name="colorPrimaryVariant">#3EACF3</item>
+        <item name="colorOnPrimary">#e5e5e5</item>
+
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    
+    
+    
+    <style name="BottomSheetDialogTheme_communitychild" parent="Theme.Design.Light.BottomSheetDialog">
+
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+
+    <style name="BottomSheetStyle"  parent="Widget.Design.BottomSheet.Modal">
+
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+
+
+    <style name="BottomSheetDialogTheme_communitychildthanks" parent="Theme.Design.Light.BottomSheetDialog">
+
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheetStyleCommunityThanks</item>
+    </style>
+
+
+    <style name="BottomSheetStyleCommunityThanks"  parent="Widget.Design.BottomSheet.Modal">
+
+
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+
+
+
+
+    <style name="BottomSheetDialogTheme_shareprofile" parent="Theme.Design.Light.BottomSheetDialog">
+
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheetStyleshareprofile</item>
+    </style>
+
+
+    <style name="BottomSheetStyleshareprofile"  parent="Widget.Design.BottomSheet.Modal">
+
+
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+
+
+
+
+
+
+
+    <style name="BottomSheetDialogTheme_chatlog" parent="Theme.Design.Light.BottomSheetDialog">
+
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheetStylechatlog</item>
+    </style>
+
+
+    <style name="BottomSheetStylechatlog"  parent="Widget.Design.BottomSheet.Modal">
+
+
+        // avoid dark theme
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+
+
+</resources>

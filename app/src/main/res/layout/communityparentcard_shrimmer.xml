@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/communityparentcard"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="7dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/communityparentcard_header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/communityparentcard_uerimage"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@color/light_gray" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/communityparentcard_uerimage">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/light_gray"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/communityparentcard_username"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/poppins_bold" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/communityparentcard_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/light_gray"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+
+                        android:layout_gravity="center_vertical"
+                       />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/communityparentcard_class"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_gray"
+                    android:textColor="@color/light_gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/roboto_bold"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/communityparentcard_subject"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:background="@color/light_gray"
+                android:textColor="@color/light_gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/communityparentcard_question"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/communityparentcard_header"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+          android:lines="3"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/gray"
+            android:background="@color/light_gray"
+            android:textSize="15sp" />
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/communityparentcard_giveansbtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/communityparentcard_question"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:background="@color/light_gray"
+            android:textColor="#3EACF3"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "394330104106",
+    "firebase_url": "https://upmark-a72c4-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "upmark-a72c4",
+    "storage_bucket": "upmark-a72c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394330104106:android:75b0ef1428cb6551927e53",
+        "android_client_info": {
+          "package_name": "com.youngminds.upmarkx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394330104106-vrqhjm2h4f0fhd1orpk5o78crok96fs0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM6ERi_oE8x7NNX8DC6ohd9YZl4Yy9Rug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394330104106-vrqhjm2h4f0fhd1orpk5o78crok96fs0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

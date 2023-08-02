@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoImageActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileimage_preview"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/default_usericon" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Profile Image*"
+        android:layout_below="@id/profileimage_preview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:elevation="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/dark_blue"
+        android:fontFamily="@font/roboto_bold"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/infoimage_backbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/backbtn" />
+
+
+    <ImageView
+        android:id="@+id/infoimage_pickimage"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@id/profileimage_preview"
+        android:layout_alignBottom="@id/profileimage_preview"
+        android:src="@drawable/editpro_icon"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/infoimage_lottie"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By signing up, you're agree to our"
+                android:textColor="@color/light_gray"
+                android:textSize="13sp"/>
+
+
+            <TextView
+                android:id="@+id/infoimage_termsandcondi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms &amp; Conditions"
+                android:textColor="@color/blue2"
+                android:layout_marginStart="5dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_bold"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="and"
+                android:textColor="@color/light_gray"
+                android:textSize="13sp"/>
+
+
+            <TextView
+                android:id="@+id/infoimage_privacypoli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:textColor="@color/blue2"
+                android:layout_marginStart="5dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_bold"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+<!--    <image-->
+<!--        android:id="@+id/infoimage_lottie"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+<!--        android:layout_below="@id/profileimage_preview"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        app:lottie_loop="true"-->
+<!--        app:lottie_rawRes="@id/infoimage_lottie"-->
+<!--        app:lottie_repeatMode="reverse" />-->
+
+    <ImageView
+        android:id="@+id/infoimage_lottie"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/profileimage_preview"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/info_illust" />
+
+
+    <Button
+        android:id="@+id/Infoimage_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/infoimage_lottie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/blue2"
+        android:text="Create"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GiveAnswerActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/latestmessages_appbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/latest_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+
+                    android:background="@color/white" />
+
+
+                <ImageView
+                    android:id="@+id/giveans_attachimage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/attachimage_icon" />
+
+                <ImageView
+                    android:id="@+id/giveans_backbtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/backbtn" />
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textSize="20sp"
+        android:textColor="@color/light_gray"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:id="@+id/giveans_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="whats your name?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:minHeight="300dp"
+            android:background="#EFF3F6">
+
+
+            <EditText
+                android:id="@+id/askans_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                android:background="#EFF3F6"
+                android:hint="Type your answer here"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Optional*"
+            android:textColor="@color/light_gray"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+
+
+            <ImageView
+                android:id="@+id/giveans_imagepreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/imageselection_icon"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+        <Button
+            android:id="@+id/askans_submitansbtn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Add your Answer"
+            android:backgroundTint="#2FB26F"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</ScrollView>

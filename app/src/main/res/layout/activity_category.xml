@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/category_backbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/backbtn" />
+
+
+        <TextView
+            android:id="@+id/category_heading_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@id/category_backbtn"
+            android:text="All Subjects"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:fontFamily="@font/poppins_bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/category_heading_textview"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category_sciencecard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E5EEF4">
+
+
+                    <ImageView
+                        android:id="@+id/science_imageview"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/science_icon" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toEndOf="@id/science_imageview"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Science"
+                        android:textColor="@color/dark_violet"
+                        android:textSize="22sp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/category_scienceexpandable"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/science_imageview"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:background="#E5EEF4"
+                        android:orientation="vertical">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/category_physicscard"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:elevation="10dp"
+                            app:cardCornerRadius="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/category_physicsimageview"
+                                    android:layout_width="70dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/physics_icon" />
+
+
+                                <TextView
+                                    android:id="@+id/category_physicstextview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="Phsics"
+                                    android:textColor="@color/gray"
+                                    android:textSize="17sp" />
+
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/category_chemistrycard"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:elevation="10dp"
+                            app:cardCornerRadius="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/category_chemistryimageview"
+                                    android:layout_width="70dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/chemistry_icon" />
+
+
+                                <TextView
+                                    android:id="@+id/category_chemistrytextview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="Chemistry"
+                                    android:textColor="@color/gray"
+                                    android:textSize="17sp" />
+
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/category_biologycard"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:elevation="10dp"
+                            app:cardCornerRadius="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/category_biologyimageview"
+                                    android:layout_width="70dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/biology_icon" />
+
+
+                                <TextView
+                                    android:id="@+id/category_biologytextview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="Biology"
+                                    android:textColor="@color/gray"
+                                    android:textSize="17sp" />
+
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+
+                    </LinearLayout>
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/category_scienceexpandablebtn"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@id/science_imageview"-->
+<!--                        android:layout_alignParentStart="true"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:layout_marginEnd="5dp"-->
+<!--                        android:layout_marginBottom="5dp"-->
+<!--                        android:text="Show more"-->
+<!--                        android:textColor="@color/light_gray"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:textStyle="bold" />-->
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category_socialcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E5EEF4">
+
+
+                    <ImageView
+                        android:id="@+id/social_imageview"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/socialscience_icon" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toEndOf="@id/social_imageview"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Social Science"
+                        android:textColor="@color/dark_violet"
+                        android:textSize="22sp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/category_socialexpandable"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/social_imageview"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:background="#E5EEF4">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/category_historycard"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:elevation="10dp"
+                            app:cardCornerRadius="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/category_historyimageview"
+                                    android:layout_width="70dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/history_icon" />
+
+
+                                <TextView
+                                    android:id="@+id/category_historytextview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="History"
+                                    android:textColor="@color/gray"
+                                    android:textSize="17sp" />
+
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/category_geographycard"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:elevation="10dp"
+                            app:cardCornerRadius="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/category_geographyimageview"
+                                    android:layout_width="70dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/geography" />
+
+
+                                <TextView
+                                    android:id="@+id/category_geographytextview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="Geography"
+                                    android:textColor="@color/gray"
+                                    android:textSize="17sp" />
+
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/category_politicalcard"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:elevation="10dp"
+                            app:cardCornerRadius="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/category_politicalimageview"
+                                    android:layout_width="70dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/politicalscince_icon" />
+
+
+                                <TextView
+                                    android:id="@+id/category_politicaltextview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="Political Science"
+                                    android:textColor="@color/gray"
+                                    android:textSize="17sp" />
+
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/category_economicscard"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:elevation="10dp"
+                            app:cardCornerRadius="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/category_economicsimageview"
+                                    android:layout_width="70dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
+                                    android:src="@drawable/economic_icon" />
+
+
+                                <TextView
+                                    android:id="@+id/category_economicstextview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="Economics"
+                                    android:textColor="@color/gray"
+                                    android:textSize="17sp" />
+
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+                    </LinearLayout>
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/category_socialexpandablebtn"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@id/social_imageview"-->
+<!--                        android:layout_alignParentStart="true"-->
+<!--                        android:layout_marginStart="20dp"-->
+<!--                        android:layout_marginBottom="5dp"-->
+<!--                        android:text="Show more"-->
+<!--                        android:textColor="@color/light_gray"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:textStyle="bold" />-->
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category_mathscard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E5EEF4">
+
+
+                <ImageView
+                    android:id="@+id/maths_imageview"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/maths_icon" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toEndOf="@id/maths_imageview"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Maths"
+                    android:textColor="@color/dark_violet"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category_englihcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="20dp"
+
+                app:cardCornerRadius="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E5EEF4">
+
+
+                    <ImageView
+                        android:id="@+id/english_imageview"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/english_icon" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toEndOf="@id/english_imageview"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="English"
+                        android:textColor="@color/dark_violet"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category_hindicard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="20dp"
+
+                app:cardCornerRadius="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     android:background="#E5EEF4">
+
+
+                    <ImageView
+                        android:id="@+id/hindi_imageview"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/hindi_icon" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toEndOf="@id/hindi_imageview"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Hindi"
+                        android:textColor="@color/dark_violet"
+                        android:textSize="22sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

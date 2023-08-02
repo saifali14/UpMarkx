@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:background="@color/light_gray"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanks"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/blue1"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_bold"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="These students found this answer helpful"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/light_gray"
+        android:textSize="16sp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_gravity="start"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/communitychild_bottomthanks_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</LinearLayout>

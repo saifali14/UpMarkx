@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/profile_icon"/>
+    <item android:id="@+id/nav_subjects"
+        android:title="Subjects"
+        android:icon="@drawable/subjects_icon"/>
+
+
+    <item  android:title="Communication">
+
+
+        <menu>
+
+            <item android:id="@+id/nav_messages"
+                android:title="Messages"
+
+                android:icon="@drawable/messages_icon"/>
+
+            <item android:id="@+id/nav_community"
+                android:title="Community"
+
+                android:icon="@drawable/community_icon"/>
+
+            <item android:id="@+id/nav_news"
+                android:title="News"
+                android:icon="@drawable/news_icon"/>
+
+        </menu>
+
+    </item>
+
+
+    <item android:id="@+id/nav_leaderboard"
+        android:title="Leaderboard"
+        android:icon="@drawable/leaderboard_icon"/>
+
+
+
+
+
+
+</menu>

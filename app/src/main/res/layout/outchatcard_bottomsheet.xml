@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chatlog_bottomsheet_drawebutton"
+        android:layout_width="50dp"
+        android:layout_height="2dp"
+        app:cardCornerRadius="10dp"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/chatlog_bottomsheet_drawebutton"
+        android:layout_margin="20dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+
+
+            <ImageView
+                android:id="@+id/like_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/liked_icon"/>
+            <ImageView
+                android:id="@+id/smiling_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/smiling_emoji"/>
+            <ImageView
+                android:id="@+id/party_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/party_emoji"/>
+            <ImageView
+                android:id="@+id/angry_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/angry_emoji"/>
+            <ImageView
+                android:id="@+id/thinking_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/thinking_emoji"/>
+            <ImageView
+                android:id="@+id/love_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/love_emoji"/>
+            <ImageView
+                android:id="@+id/wow_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/wow_emoji"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/outchat_bottomsheet_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reply to the message"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/gray"/>
+
+</LinearLayout>

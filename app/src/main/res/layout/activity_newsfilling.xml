@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsfillingActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/newsuimagepreview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/newsuimageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/newsuimageupload"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_margin="20dp"-->
+<!--                android:src="@drawable/downloadicon"/>-->
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/newsuheading_inputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Heading"
+        app:counterMaxLength="180"
+        app:helperTextEnabled="true"
+        android:layout_below="@id/newsuimagepreview"
+        android:layout_centerHorizontal="true"
+        app:endIconMode="clear_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newsuheading_edxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="180"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/newsubody_inputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Body..."
+        app:counterMaxLength="180"
+        app:helperTextEnabled="true"
+        android:layout_below="@id/newsuheading_inputlayout"
+        android:layout_centerHorizontal="true"
+        app:endIconMode="clear_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newsubody_edxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="180"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/newsulink_inputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Please provide link"
+        app:counterMaxLength="250"
+        app:helperTextEnabled="true"
+        android:layout_below="@id/newsubody_inputlayout"
+        android:layout_centerHorizontal="true"
+        app:endIconMode="clear_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newsulink_edxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="250"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/newsuindex_inputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Index"
+        app:counterMaxLength="250"
+        app:helperTextEnabled="true"
+        android:layout_below="@id/newsulink_inputlayout"
+        android:layout_centerHorizontal="true"
+        app:endIconMode="clear_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newsuindex_edxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="250"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/newsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/newsuindex_inputlayout"
+        android:layout_margin="30dp"
+        android:text="Submit"/>
+
+</RelativeLayout>

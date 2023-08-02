@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@color/light_gray"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/meprofile_menu_savedans"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/latestmessge_ripple">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/saved_cion"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"/>
+
+
+        <TextView
+            android:id="@+id/meprofile_menu_savedanstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:textSize="17sp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/lato_regular"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/meprofile_menu_askedquestions"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/latestmessge_ripple">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/questionsans_icon"
+            android:backgroundTint="@color/blue2"
+            android:layout_marginStart="20dp"/>
+
+
+        <TextView
+            android:id="@+id/meprofile_menu_askedquestionstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asked Questions"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:textSize="17sp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/lato_regular"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/meprofile_menu_termscondi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/latestmessge_ripple">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/termscondi_icon"
+            android:layout_marginStart="20dp"/>
+
+
+        <TextView
+            android:id="@+id/meprofile_menu_termscocnditionstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms &amp; conditions"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:textSize="17sp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/lato_regular"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/meprofile_menu_privacypoli"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/latestmessge_ripple">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/privacypoli_icon"
+            android:layout_marginStart="20dp"/>
+
+
+        <TextView
+            android:id="@+id/meprofile_menu_privacypolitext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:textSize="17sp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/lato_regular"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/meprofile_menu_about"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/latestmessge_ripple">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/about_iocn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"/>
+
+
+        <TextView
+            android:id="@+id/meprofile_menu_abouttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:textSize="17sp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/lato_regular"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/meprofile_menu_discoverpeople"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/latestmessge_ripple">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/verifieduser_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"/>
+
+
+        <TextView
+            android:id="@+id/meprofile_menu_discoverpeopletextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verified Students"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:textSize="17sp"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/lato_regular"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/meprofile_menu_adminpanel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/latestmessge_ripple">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/admin1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"/>
+
+
+        <TextView
+            android:id="@+id/meprofile_menu_adminpaneltextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin "
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:textSize="17sp"
+            android:textColor="@color/blue2"
+            android:fontFamily="@font/lato_regular"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"/>
+
+
+    <RelativeLayout
+        android:id="@+id/meprofile_menu_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:id="@+id/meprofile_menu_logouttextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/latestmessge_ripple"
+            android:fontFamily="@font/roboto_black"
+            android:text="Log Out"
+            android:textColor="@color/violet"
+            android:textSize="18sp" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"/>
+
+</LinearLayout>

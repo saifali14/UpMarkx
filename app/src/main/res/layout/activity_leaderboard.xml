@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeaderboardActivity"
+    android:background="#EFF3F6">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/headerleaderboard_card"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+
+
+       >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="LEADERBOARD"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <ImageView
+                android:id="@+id/leaderboard_backbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/backbtn" />
+
+            <ImageView
+                android:id="@+id/leaderboard_aboutbtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/option_menu" />
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:layout_above="@+id/leaderboard_firstcard"
+                android:layout_alignStart="@id/leaderboard_firstcard"
+                android:layout_alignEnd="@+id/leaderboard_firstcard"
+                app:lottie_autoPlay="true"
+                android:elevation="100dp"
+                app:lottie_rawRes="@raw/trophy_lottie" />
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/leaderboard_firstcard"
+                android:layout_width="130dp"
+                android:layout_height="190dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="50dp"
+                android:elevation="10dp">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/leaderboard_first_imagview"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/default_usericon" />
+
+
+                    <TextView
+                        android:id="@+id/leaderboard_first_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/leaderboard_first_imagview"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/leaderboard_first_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/leaderboard_first_name"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text=""
+                        android:textColor="@color/light_gray"
+                        android:textSize="11sp" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/leaderboard_first_likes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="17sp" />
+
+
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/liked_icon"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="5dp"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/leaderboard_secondcard"
+                android:layout_alignStart="@id/leaderboard_secondcard"
+                android:layout_alignEnd="@+id/leaderboard_secondcard"
+                android:layout_marginBottom="10dp"
+                android:elevation="100dp"
+                android:src="@drawable/second_picon" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/leaderboard_secondcard"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@id/leaderboard_firstcard"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/leaderboard_second_imagview"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/default_usericon" />
+
+
+                    <TextView
+                        android:id="@+id/leaderboard_second_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/leaderboard_second_imagview"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/leaderboard_second_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/leaderboard_second_name"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text=""
+                        android:textColor="@color/light_gray"
+                        android:textSize="11sp" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/leaderboard_second_likes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="17sp" />
+
+
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/liked_icon"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="5dp"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/leaderboard_thirdcard"
+                android:layout_alignStart="@id/leaderboard_thirdcard"
+                android:layout_alignEnd="@+id/leaderboard_thirdcard"
+                android:layout_marginBottom="10dp"
+                android:elevation="100dp"
+                android:src="@drawable/third_picon" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/leaderboard_thirdcard"
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/leaderboard_firstcard"
+                android:layout_marginBottom="15dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/leaderboard_third_imagview"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/default_usericon" />
+
+
+                    <TextView
+                        android:id="@+id/leaderboard_third_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/leaderboard_third_imagview"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/leaderboard_third_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/leaderboard_third_name"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text=""
+                        android:textColor="@color/light_gray"
+                        android:textSize="11sp" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/leaderboard_third_likes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="17sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/gray"/>
+
+
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/liked_icon"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="5dp"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#3EACF3">-->
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:text="LEADERBOARD"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="28sp" />-->
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/leaderboard_firstlayout"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="60dp"-->
+<!--                android:orientation="vertical">-->
+
+
+<!--                <ImageView-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:text="1"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                   android:src="@drawable/gold_icon"-->
+<!--                    android:layout_marginBottom="10dp"/>-->
+
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:id="@+id/leaderboard_firstimageview"-->
+<!--                    android:layout_width="90dp"-->
+<!--                    android:layout_height="90dp"-->
+<!--                    android:elevation="15dp"-->
+<!--                    android:src="@drawable/default_usericon"-->
+<!--                    app:civ_border_color="@color/white"-->
+<!--                    app:civ_border_width="1dp" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/leaderboardh_firname"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Saif Ali"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="19sp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="5dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/leaderboardh_firclass"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Class 10"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:layout_marginTop="1dp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:textColor="@color/white"/>-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0.5dp"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:layout_marginTop="7dp"/>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_gravity="center_horizontal">-->
+
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="20dp"-->
+<!--                        android:layout_marginEnd="5dp"-->
+<!--                        android:src="@drawable/liked_icon"/>-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/leaderboardh_firlikes"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="100"-->
+
+<!--                        android:textColor="@color/white"/>-->
+
+<!--                </LinearLayout>-->
+
+
+
+<!--            </LinearLayout>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/leaderboard_secondlayout"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginTop="100dp"-->
+<!--                android:layout_marginEnd="40dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_toStartOf="@id/leaderboard_firstlayout"-->
+<!--                android:orientation="vertical">-->
+
+
+<!--                <ImageView-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:src="@drawable/silver_medal"-->
+<!--                   />-->
+
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:id="@+id/leaderboard_secondimgeview"-->
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:elevation="15dp"-->
+<!--                    android:src="@drawable/default_usericon"-->
+<!--                    app:civ_border_color="@color/white"-->
+<!--                    app:civ_border_width="1dp" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/leaderboardh_secname"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:text="Arisha"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="17sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/leaderboardh_secclass"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="1dp"-->
+<!--                    android:text="Class 10"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="12sp" />-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0.5dp"-->
+<!--                    android:layout_marginTop="7dp"-->
+<!--                    android:background="@color/white" />-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:orientation="horizontal">-->
+
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="20dp"-->
+<!--                        android:layout_marginEnd="5dp"-->
+<!--                        android:src="@drawable/liked_icon" />-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/leaderboardh_seclikes"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="100"-->
+
+<!--                        android:textColor="@color/white" />-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/leaderboard_thirdlayout"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginStart="40dp"-->
+<!--                android:layout_marginTop="100dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:layout_toEndOf="@id/leaderboard_firstlayout"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:src="@drawable/bronze_medal"/>-->
+
+<!--                <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                    android:id="@+id/leaderboard_thirdimageview"-->
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:elevation="15dp"-->
+<!--                    android:src="@drawable/default_usericon"-->
+<!--                    app:civ_border_color="@color/white"-->
+<!--                    app:civ_border_width="1dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/leaderboardh_thirname"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:text="Ruhan"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="17sp" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/leaderboardh_thirclass"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="1dp"-->
+<!--                    android:text="Class 10"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="12sp" />-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0.5dp"-->
+<!--                    android:layout_marginTop="7dp"-->
+<!--                    android:background="@color/white" />-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:orientation="horizontal">-->
+
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="20dp"-->
+<!--                        android:layout_marginEnd="5dp"-->
+<!--                        android:src="@drawable/liked_icon" />-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/leaderboardh_thirlikes"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="100"-->
+<!--                        android:textColor="@color/white" />-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+
+
+
+
+
+
+
+<!--        </RelativeLayout>-->
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/populartext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerleaderboard_card"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="POPULAR"
+        android:textColor="@color/gray"
+        android:textSize="17sp" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/leaderboard_lowerhead"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        app:cardCornerRadius="5dp"
+        android:layout_below="@id/populartext">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#547AE1">
+
+
+            <TextView
+                android:id="@+id/leaderboard_lowerhead_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:text="Rank"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@id/leaderboard_lowerhead_rank"
+                android:text="User"
+                android:textColor="@color/white"/>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/leaderboard_lowerhead_thanks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thanks"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="30dp"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@id/leaderboard_lowerhead_rank"
+                android:text="User"
+                android:textColor="@color/white"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/leaderboard_shrimmer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/leaderboard_lowerhead"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <include layout="@layout/home_leaderboard_card_shrimmer"/>
+            <include layout="@layout/home_leaderboard_card_shrimmer"/>
+            <include layout="@layout/home_leaderboard_card_shrimmer"/>
+            <include layout="@layout/home_leaderboard_card_shrimmer"/>
+            <include layout="@layout/home_leaderboard_card_shrimmer"/>
+            <include layout="@layout/home_leaderboard_card_shrimmer"/>
+            <include layout="@layout/home_leaderboard_card_shrimmer"/>
+            <include layout="@layout/home_leaderboard_card_shrimmer"/>
+            <include layout="@layout/home_leaderboard_card_shrimmer"/>
+            <include layout="@layout/home_leaderboard_card_shrimmer"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leaderboar_recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/leaderboard_lowerhead"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

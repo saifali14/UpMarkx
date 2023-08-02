@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity"
+    android:background="#E5EEF4">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/userprofile_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="top"
+        android:background="#EFF3F6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/userprofile_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userprofile_header_imageview"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/default_usericon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/userprofile_backbtn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/userprofile_headerUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/userprofile_header_imageview"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/userprofile_backbtn"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/backbtn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userprofile_profilebtn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/userprofile_messlayout"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RelativeLayout
+                android:id="@+id/userprofile_messlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/userprofile_messagebtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/home_messageicon"
+                     />
+
+
+                <RelativeLayout
+                    android:id="@+id/main_messagebtn_notifycount_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@id/userprofile_messagebtn"
+                    android:visibility="gone">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@color/light_gray" />
+
+
+                    <TextView
+                        android:id="@+id/userprofile_messagecount_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <View
+            android:id="@+id/userprofile_blurebackground"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/profile_background"
+            android:scaleType="centerCrop" />
+
+
+        <View
+            android:id="@+id/userprofile_upperview"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/profile_up1_backgournd" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userprofile_imageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95dp"
+            android:elevation="10dp"
+            android:src="@drawable/default_usericon"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="330dp"
+            android:layout_below="@id/userprofile_imageview"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+
+            <LinearLayout
+                android:id="@+id/userprofile_namelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/userprofile_nameview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="saif ali shaikh"
+                    android:textColor="@color/violet"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/userprofile_verified"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:elevation="1000dp"
+                    android:src="@drawable/verified2"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/userprofile_emailview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userprofile_namelayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/userprofile_bioview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userprofile_emailview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:maxWidth="300dp"
+                android:maxLines="3"
+                android:textAlignment="center"
+                android:textColor="#6E6E6E"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/userprofile_followbtn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/userprofile_bioview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/blue"
+                android:elevation="10dp"
+                android:text="Follow"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/userprofile_followingbtn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/userprofile_bioview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+
+                android:backgroundTint="@color/vlight_gray"
+                android:elevation="10dp"
+                android:text="Following"
+                android:textAllCaps="false"
+                android:textColor="@color/gray"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/userprofile_messsagebtnlayout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/userprofile_bioview"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userprofile_messsagebtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/latestmessge_ripple"
+                    android:src="@color/white"
+
+                    app:civ_border_color="@color/light_gray"
+                    app:civ_border_width="0.5dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/message_icon1" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/userprofile_sharebtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/userprofile_bioview"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/latestmessge_ripple">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@color/white"
+                    app:civ_border_color="@color/light_gray"
+                    app:civ_border_width="0.5dp" />
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:elevation="10dp"
+                    android:src="@drawable/share_icon1" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/userprofile_upperrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userprofile_bioview"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/userprofile_answerscard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/latestmessge_ripple">
+
+
+                    <TextView
+                        android:id="@+id/userprofile_ans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/userprofile_anstextview"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="0"
+                        android:textColor="@color/violet"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/userprofile_anstextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Answers"
+                        android:textColor="@color/light_gray"
+                        android:textSize="17sp"
+                        app:layout_constraintEnd_toEndOf="@+id/userprofile_ans"
+                        app:layout_constraintStart_toStartOf="@+id/userprofile_ans"
+                        app:layout_constraintTop_toBottomOf="@id/userprofile_ans" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/userprofile_followerscard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/latestmessge_ripple">
+
+
+                    <TextView
+                        android:id="@+id/userprofile_followers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/userprofile_followerstextview"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="0"
+                        android:textColor="@color/violet"
+                        android:textSize="20sp"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/userprofile_followerstextview"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Followers"
+                        android:textColor="@color/light_gray"
+                        android:textSize="17sp"
+                        app:layout_constraintEnd_toEndOf="@+id/userprofile_followers"
+                        app:layout_constraintStart_toStartOf="@+id/userprofile_followers"
+                        app:layout_constraintTop_toBottomOf="@id/userprofile_followers" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/userprofile_followingcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/latestmessge_ripple">
+
+
+                    <TextView
+                        android:id="@+id/userprofile_following"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/userprofile_followingtextview"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="0"
+                        android:textColor="@color/violet"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/userprofile_followingtextview"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Following"
+                        android:textColor="@color/light_gray"
+
+                        android:textSize="17sp"
+                        app:layout_constraintEnd_toEndOf="@+id/userprofile_following"
+                        app:layout_constraintStart_toStartOf="@+id/userprofile_following"
+                        app:layout_constraintTop_toBottomOf="@id/userprofile_following" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/userprofile_suggestionlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userprofile_upperview"
+            android:visibility="gone"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp">
+
+
+
+            <TextView
+                android:id="@+id/userprofile_suggestion_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Suggested for You"
+                android:textColor="@color/gray"
+                android:textSize="18sp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/userprofile_suggestionrecy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userprofile_suggestion_heading"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/userprofile_liiescountcard"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@id/userprofile_suggestionlayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+
+            android:background="@drawable/recentlyaskquestion_background"
+            android:backgroundTint="@color/white"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/userprofile_likelottie"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="10dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/like_lottiee"
+                    app:lottie_repeatMode="reverse" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/userprofile_likelottie">
+
+
+
+
+                    <com.daasuu.cat.CountAnimationTextView
+                        android:id="@+id/count_animation_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="0"
+                        android:textColor="@color/dark_violet"
+                        android:textSize="40sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Thanks"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/blue1"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/userprofile_questionaskedcard"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/userprofile_liiescountcard"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:background="@drawable/recentlyaskquestion_background"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="5dp">
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                  >
+
+
+                    <TextView
+                        android:id="@+id/userprofile_recentlyasked_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Asked Questions:"
+                        android:textColor="@color/light_gray"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/userprofile_recentlyasked_viewall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="View All"
+                        android:textColor="@color/blue"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/userprofile_questionsked_recyclerview"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_below="@id/userprofile_recentlyasked_textview"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/userprofile_recentlyasked_emptylottie"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/userprofile_recentlyasked_textview"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:visibility="visible"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/empty_lottie" />
+
+
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/userprofile_questionasked_textview"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Questons Asked"-->
+<!--                android:textColor="@color/blue"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_alignParentStart="true"/>-->
+
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="View All"-->
+<!--                android:textColor="@color/blue"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_alignParentEnd="true"/>-->
+
+
+
+
+
+
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/userprofile_followers_layout"
+           android:layout_width="match_parent"
+           android:layout_height="160dp"
+           android:layout_below="@id/userprofile_questionaskedcard"
+           android:layout_alignParentStart="true"
+           android:layout_alignParentEnd="true"
+
+           android:layout_marginTop="10dp">
+
+
+           <RelativeLayout
+
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@color/white"
+               >
+
+
+               <TextView
+                   android:id="@+id/userprofile_followers_textview"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginEnd="10dp"
+                   android:layout_marginBottom="10dp"
+                   android:text="Followers"
+                   android:fontFamily="@font/lato_bold"
+                   android:textColor="@color/violet"
+                   android:textSize="16sp" />
+
+
+               <TextView
+                   android:id="@+id/userprofile_followers_viewall"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginEnd="10dp"
+                   android:layout_marginBottom="10dp"
+                   android:text="View All"
+                   android:textColor="@color/blue"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/userprofile_followers_recyclerview"
+                   android:layout_width="0dp"
+                   android:layout_height="0dp"
+                   android:layout_below="@id/userprofile_followers_textview"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentBottom="true"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginEnd="10dp"
+                   android:layout_marginBottom="10dp"
+                   android:orientation="horizontal"
+                   app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+               <com.airbnb.lottie.LottieAnimationView
+                   android:id="@+id/userprofile_followers_emptylottie"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_below="@+id/userprofile_followers_textview"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentBottom="true"
+                   app:lottie_rawRes="@raw/empty_lottie"
+                   app:lottie_loop="true"
+                   android:elevation="10dp"
+                   android:visibility="gone"
+                   app:lottie_autoPlay="true"/>
+
+           </RelativeLayout>
+
+       </androidx.cardview.widget.CardView>
+
+
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/userprofile_following_layout"
+       android:layout_width="match_parent"
+       android:layout_height="160dp"
+       android:layout_marginTop="15dp"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentEnd="true"
+       android:layout_below="@id/userprofile_followers_layout">
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/white">
+
+           <TextView
+               android:id="@+id/userprofile_following_textview"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="10dp"
+               android:layout_marginBottom="10dp"
+               android:text="Following"
+               android:fontFamily="@font/lato_bold"
+               android:textColor="@color/violet"
+               android:textSize="16sp" />
+
+
+           <TextView
+               android:id="@+id/userprofile_following_viewall"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="10dp"
+               android:layout_marginBottom="10dp"
+               android:text="View All"
+               android:textColor="@color/blue"
+               android:textSize="16sp"
+               android:textStyle="bold" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/userprofile_following_recyclerview"
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:layout_below="@id/userprofile_following_textview"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentBottom="true"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="10dp"
+               android:layout_marginBottom="10dp"
+               android:orientation="horizontal"
+               app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+           <com.airbnb.lottie.LottieAnimationView
+               android:id="@+id/userprofile_following_emptylottie"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_below="@+id/userprofile_following_textview"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentBottom="true"
+               app:lottie_rawRes="@raw/empty_lottie"
+               app:lottie_loop="true"
+               android:elevation="10dp"
+               android:visibility="gone"
+               app:lottie_autoPlay="true"/>
+
+
+       </RelativeLayout>
+   </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/communitychild_bottomSheet"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/communitychild_bottomsheet_background">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tell us What's wrong with it:"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"/>
+
+
+    <RadioGroup
+        android:id="@+id/communitychild_bottomsheet_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/communitychild_bottomsheet_opt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copy or plagiarism"
+            android:textStyle="bold"
+            android:buttonTint="#3EACF3"/>
+
+        <RadioButton
+            android:id="@+id/communitychild_bottomsheet_opt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mistakes in the answer"
+            android:textStyle="bold"
+            android:buttonTint="#3EACF3"/>
+
+        <RadioButton
+            android:id="@+id/communitychild_bottomsheet_opt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Improper answer"
+            android:textStyle="bold"
+            android:buttonTint="#3EACF3"/>
+
+
+        <RadioButton
+            android:id="@+id/communitychild_bottomsheet_opt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linguistic errors"
+            android:textStyle="bold"
+            android:buttonTint="#3EACF3"/>
+
+        <RadioButton
+            android:id="@+id/communitychild_bottomsheet_opt5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contains forbidden content"
+            android:textStyle="bold"
+            android:buttonTint="#3EACF3"/>
+
+        <RadioButton
+            android:id="@+id/communitychild_bottomsheet_opt6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Advertisement of other Stuffs"
+            android:textStyle="bold"
+            android:buttonTint="#3EACF3"/>
+
+        <RadioButton
+            android:id="@+id/communitychild_bottomsheet_opt7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer contains personal information"
+            android:textStyle="bold"
+            android:buttonTint="#3EACF3"/>
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/communitychild_bottomsheet_sendbtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#3EACF3"
+        android:text="SEND"
+        android:textColor="@color/white"
+        android:layout_gravity="end"
+       android:layout_margin="20dp"/>
+
+
+
+
+
+</LinearLayout>

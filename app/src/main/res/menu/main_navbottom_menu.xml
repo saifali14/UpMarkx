@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id="@+id/bottomnav_home"
+        android:icon="@drawable/bottom_home"
+        android:title="Home"/>
+
+
+    <item android:id="@+id/bottomnav_search"
+        android:icon="@drawable/search_icon22"
+        android:title="Search"/>
+
+
+    <item android:id="@+id/bottomnav_ask"
+        android:icon="@drawable/addicon"
+        android:title="Ask Doubt"/>
+
+    <item android:id="@+id/bottomnav_community"
+        android:icon="@drawable/community_icon"
+        android:title="Community"/>
+
+    <item android:id="@+id/bottomnav_profile"
+        android:icon="@drawable/profile_icon"
+        android:title="Me"/>
+
+
+
+</menu>

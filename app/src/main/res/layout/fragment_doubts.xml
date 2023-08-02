@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.DoubtsFragment"
+
+    android:background="#E5EEF4">
+
+
+    <EditText
+        android:id="@+id/community_searchview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+
+        android:background="@drawable/searchview_background"
+        android:drawableStart="@drawable/search_icon"
+        android:hint="Search Questions"
+        android:paddingStart="10dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/community_chiplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/community_searchview"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        >
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            app:singleSelection="true">
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_recents"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recents" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_physics"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Physics" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_chemistry"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chemistry" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_biology"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biology" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_english"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_history"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_geography"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geography" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_economics"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Economics" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_politicalscience"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Political Science" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_hindi"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hindi" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_maths"
+                style="@style/CustomChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maths" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </RelativeLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/community_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/community_chiplayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp">
+
+
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/community_recyclerview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layoutAnimation="@anim/layout_animation"
+            android:layout_below="@id/community_chiplayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="1dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/doubtfrag_shrimmer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/community_chiplayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/communityparentcard_shrimmer"/>
+
+            <include layout="@layout/communityparentcard_shrimmer"/>
+
+            <include layout="@layout/communityparentcard_shrimmer"/>
+
+            <include layout="@layout/communityparentcard_shrimmer"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/community_suggestion_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/community_searchview"
+        android:layout_alignStart="@id/community_searchview"
+        android:layout_alignEnd="@id/community_searchview"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/community_askquestionbtn"-->
+<!--        style="@style/ThemeOverlay.Material3.FloatingActionButton.Tertiary"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:backgroundTint="#3EACF3"-->
+<!--        android:elevation="10dp"-->
+<!--        android:src="@drawable/addicon1" />-->
+
+
+</RelativeLayout>

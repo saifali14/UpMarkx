@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/register_illus"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/signup_illustration1" />
+
+
+    <ImageView
+        android:id="@+id/Register_backbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/backbtn" />
+
+
+
+
+
+
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/register_illus"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:id="@+id/Register_registertextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+
+            android:fontFamily="@font/poppins_bold"
+            android:text="Sign up..."
+            android:textColor="@color/blue2"
+            android:textSize="28sp" />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Register_textinputlayout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_margin="5dp"
+                android:layout_below="@id/Register_registertextview"
+
+                android:hint="Email ID"
+                app:startIconDrawable="@drawable/email_icon"
+                app:boxStrokeColor="@color/blue2"
+                app:hintTextColor="@color/blue2"
+                app:endIconMode="clear_text"
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Register_editxt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Register_textinputlayout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/Register_textinputlayout_email"
+                style = "@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_margin="5dp"
+                android:hint="Password"
+                app:startIconDrawable="@drawable/password_icon"
+                app:boxStrokeColor="@color/blue2"
+                app:hintTextColor="@color/blue2"
+                app:endIconMode="password_toggle"
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Register_editxt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/Register_textinputlayout_password"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="By signing up, you're agree to our"
+                        android:textColor="@color/light_gray"
+                        android:textSize="13sp"/>
+
+
+                    <TextView
+                        android:id="@+id/register_termsandcondi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms &amp; Conditions"
+                        android:textColor="@color/blue2"
+                        android:layout_marginStart="5dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_bold"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="and"
+                        android:textColor="@color/light_gray"
+                        android:textSize="13sp"/>
+
+
+                    <TextView
+                        android:id="@+id/register_privacypoli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/blue2"
+                        android:layout_marginStart="5dp"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_bold"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        <Button
+            android:id="@+id/Register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/Register_textinputlayout_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/blue2"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/Register_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an Account?"
+                    android:textSize="15sp"
+                    android:textColor="@color/light_gray"/>
+
+
+                <TextView
+                    android:id="@+id/Register_logintext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:layout_marginStart="5dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue2"
+                    android:fontFamily="@font/roboto_bold"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>
